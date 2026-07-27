@@ -27,13 +27,26 @@ function getWhatsAppUrl(message = DEFAULT_MSG) {
   return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedMsg}`;
 }
 
+function triggerWhatsAppConversion() {
+  if (typeof gtag_report_conversion === 'function') {
+    gtag_report_conversion();
+  } else if (typeof window.gtag === 'function') {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-975814676/TK-nCPyw09ccEJSAp9ED',
+      'value': 1.0,
+      'currency': 'BRL'
+    });
+  }
+}
+
 function initWhatsAppLinks() {
   // Botões gerais (Header, Hero, Rodapé)
-  const generalBtns = document.querySelectorAll('.btn-whatsapp-general');
+  const generalBtns = document.querySelectorAll('.btn-whatsapp-general, .btn-whatsapp, [href*="whatsapp"], [href*="wa.me"]');
   generalBtns.forEach(btn => {
     btn.setAttribute('href', getWhatsAppUrl());
     btn.setAttribute('target', '_blank');
     btn.setAttribute('rel', 'noopener noreferrer');
+    btn.addEventListener('click', triggerWhatsAppConversion);
   });
 
   // Botões específicos dos cards de serviço
@@ -50,6 +63,7 @@ function initWhatsAppLinks() {
     btn.setAttribute('href', getWhatsAppUrl(customMsg));
     btn.setAttribute('target', '_blank');
     btn.setAttribute('rel', 'noopener noreferrer');
+    btn.addEventListener('click', triggerWhatsAppConversion);
   });
 }
 
