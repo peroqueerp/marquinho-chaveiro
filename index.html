@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- SEO PRIMÁRIO E GEOLOCALIZAÇÃO - RIBEIRÃO PRETO -->
+  <title>Chaveiro Marquinho | Chaveiro 24h e Automotivo em Ribeirão Preto</title>
+  <meta name="description" content="Chaveiro 24h em Ribeirão Preto perto de mim. Chave automotiva, codificada, chave canivete HB20, VW, BMW e caminhões. Atendimento urgente 24 horas em 15 min!">
+  <meta name="keywords" content="chave automotiva, chave canivete, chave codificada, chave geral automotiva, chave keyless, chaveiro 24h, chaveiro 24h perto de mim, chaveiro automotivo, chaveiro automotivo perto de mim, chaveiro bmw, chaveiro caminhão, chaveiro canivete hb20, chaveiro canivete vw, chaveiro carro, chaveiro chave de carro, chaveiro codificada, chaveiro de automóveis, chaveiro de caminhao, chaveiro honda, chaveiro hyundai, chaveiro moto, chaveiro para carros, chaveiro para carros femininos, chaveiro próximo a mim, chaveiro veicular, chaveiro volkswagen, chaveiro volvo, codificar chave, chaveiro ribeirao preto">
+  
+  <meta name="author" content="Chaveiro Marquinho">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="BR-SP">
+  <meta name="geo.placename" content="Ribeirão Preto">
+  <meta name="geo.position" content="-21.1704;-47.8103">
+  <meta name="ICBM" content="-21.1704, -47.8103">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chaveiro Marquinho | Atendimento Urgente 24h em Ribeirão Preto">
+  <meta property="og:description" content="Perdeu a chave ou trancou o carro? Viatura móvel com tempo médio de chegada de 15 minutos em toda Ribeirão Preto. Chave codificada, canivete e abertura geral.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon e CSS -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔑</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- SCHEMA.ORG JSON-LD (SEO LOCAL PARA O GOOGLE MEU NEGÓCIO & RICH SNIPPETS) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Chaveiro Marquinho - Ribeirão Preto",
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80",
+    "telephone": "+55-16-99961-7048",
+    "url": "https://peroqueerp.github.io/chaveiro-marquinho",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Atendimento Móvel em toda a Cidade e Rodovias",
+      "addressLocality": "Ribeirão Preto",
+      "addressRegion": "SP",
+      "postalCode": "14000-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -21.1704,
+      "longitude": -47.8103
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "City",
+      "name": "Ribeirão Preto"
+    },
+    "sameAs": [
+      "https://wa.me/5516999617048"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER & NAVEGAÇÃO
+       ====================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-key"></i></div>
+        <div class="logo-text">Chaveiro <span>Marquinho</span></div>
+      </a>
+      
+      <!-- Navegação Desktop -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#servicos"><i class="fa-solid fa-car-side"></i> Automotivo</a></li>
+          <li><a href="#servicos"><i class="fa-solid fa-house-lock"></i> Residencial</a></li>
+          <li><a href="#diferenciais"><i class="fa-solid fa-clock"></i> 24 Horas</a></li>
+          <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="phone-badge">
+          <span>Plantão Urgência 24h:</span>
+          <strong><i class="fa-solid fa-phone text-gold"></i> (16) 99961-7048</strong>
+        </div>
+        <a href="#" class="btn btn-whatsapp btn-whatsapp-general">
+          <i class="fa-brands fa-whatsapp"></i> <span>Chamar no WhatsApp</span>
+        </a>
+        
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       GAVETA DE MENU MOBILE & BACKDROP OVERLAY
+       ====================================================================== -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <aside class="mobile-menu" id="mobile-menu-drawer">
+    <div>
+      <div class="mobile-menu-header">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-key"></i></div>
+          <div class="logo-text">Chaveiro <span>Marquinho</span></div>
+        </a>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fechar Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#servicos"><i class="fa-solid fa-car-side"></i> Serviços Automotivos</a></li>
+        <li><a href="#servicos"><i class="fa-solid fa-house-lock"></i> Chaveiro Residencial</a></li>
+        <li><a href="#servicos"><i class="fa-solid fa-building-lock"></i> Soluções Empresariais</a></li>
+        <li><a href="#diferenciais"><i class="fa-solid fa-bolt"></i> Por Que Escolher Us</a></li>
+        <li><a href="#faq"><i class="fa-solid fa-circle-question"></i> Dúvidas Frequentes</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <div class="phone-badge" style="display: flex; text-align: center; margin-bottom: 0.5rem;">
+        <span>Plantão Urgência 24h:</span>
+        <strong style="font-size: 1.15rem;"><i class="fa-solid fa-phone text-gold"></i> (16) 99961-7048</strong>
+      </div>
+      <a href="tel:16999617048" class="btn btn-primary" style="background: var(--bg-card); color: #fff; border: 1px solid var(--border-glass);">
+        <i class="fa-solid fa-phone-volume text-gold"></i> Ligação Convencional
+      </a>
+      <a href="#" class="btn btn-whatsapp btn-whatsapp-general">
+        <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp 24h
+      </a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       HERO SECTION (ALTA CONVERSÃO & GEOLOCALIZAÇÃO RIBEIRÃO PRETO)
+       ====================================================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      
+      <!-- Lado Esquerdo: Copy Comercial e Chamadas de Ação -->
+      <div class="hero-content">
+        <div class="shimmer-badge">
+          <span class="pulse-dot"></span> Plantão 24h Ativo em Ribeirão Preto • Agilidade Extrema
+        </div>
+        
+        <h1 class="hero-title">
+          Chaveiro Automotivo & 24h <br>
+          <span class="text-gradient">Perto de Você Agora.</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Trancou o carro? Perdeu a chave codificada ou canivete? Atendimento urgente em toda Ribeirão Preto com viaturas móveis, maquinário de ponta e abertura sem danos.
+        </p>
+
+        <div class="hero-badges">
+          <div class="badge-item"><i class="fa-solid fa-check text-gold"></i> Chaves Canivete e Codificadas</div>
+          <div class="badge-item"><i class="fa-solid fa-check text-gold"></i> Carros, Motos e Caminhões</div>
+          <div class="badge-item"><i class="fa-solid fa-check text-gold"></i> Abertura 100% Sem Danos</div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-whatsapp btn-whatsapp-general" style="font-size: 1.1rem; padding: 1rem 2rem;">
+            <i class="fa-brands fa-whatsapp"></i> Chamar WhatsApp (16) 99961-7048
+          </a>
+          <a href="tel:16999617048" class="btn btn-outline" style="font-size: 1.05rem;">
+            <i class="fa-solid fa-phone-volume text-gold"></i> Ligar Agora
+          </a>
+        </div>
+      </div>
+
+      <!-- Lado Direito: Widget Interativo de SLA / Geolocalização -->
+      <div class="hero-card">
+        <div class="card-title">
+          <i class="fa-solid fa-location-dot text-gold"></i> Viatura Mais Próxima de Você
+        </div>
+        <p class="card-subtitle">
+          Selecione seu bairro ou região em Ribeirão Preto para ver o tempo médio de chegada de nossos chaveiros:
+        </p>
+
+        <div class="geo-box">
+          <div class="geo-status" id="geo-status">
+            <div id="eta-time" style="font-size: 1.1rem; margin-bottom: 0.35rem;">
+              <i class="fa-solid fa-bolt text-gold"></i> Tempo estimado: <strong>10 a 15 min</strong>
+            </div>
+            <div id="viatura-location" style="color: var(--success); font-weight: 600; font-size: 0.85rem;">
+              <i class="fa-solid fa-car-on"></i> Viatura em patrulhamento na sua região
+            </div>
+          </div>
+
+          <label for="geo-select" style="font-size: 0.8rem; color: var(--text-muted); display: block; text-align: left;">
+            Seu Bairro / Região:
+          </label>
+          <select id="geo-select" class="geo-select" aria-label="Selecione seu Bairro">
+            <option value="">🎯 Selecione para calcular tempo...</option>
+            <option value="centro">Centro / Meio Damião</option>
+            <option value="fiusa">Av. Prof. João Fiúsa / Alto do Ipê / Sul</option>
+            <option value="jardim-botanico">Jardim Botânico / Irajá</option>
+            <option value="campos-eliseos">Campos Elíseos / Saudade / Norte</option>
+            <option value="sumarezinho">Sumarezinho / Vila Tibério / Oeste</option>
+            <option value="lagoinha">Lagoinha / Castelo Branco / Leste</option>
+            <option value="bonfim-paulista">Bonfim Paulista / Guaporé</option>
+            <option value="caminhao-rodovias">Rodovias (Anhanguera / Washington Luís)</option>
+          </select>
+        </div>
+
+        <button type="button" id="btn-gps-detect" class="btn btn-outline" style="width: 100%; font-size: 0.9rem; padding: 0.75rem;">
+          <i class="fa-solid fa-location-crosshairs text-gold"></i> Usar Meu GPS Atual
+        </button>
+
+        <div class="quick-stats">
+          <div class="stat-item">
+            <div class="stat-num">15 min</div>
+            <div class="stat-label">SLA Médio Chegada</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">Plantão Finais de Semana</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CATÁLOGO DE SERVIÇOS & FILTRAGEM AO VIVO (SEO MASTER)
+       ====================================================================== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Soluções Rápidas & Garantidas</span>
+        <h2 class="section-title">Especialidade em Chaves Automotivas e Emergências 24h</h2>
+        <p style="color: var(--text-muted); margin-top: 0.75rem;">
+          Cobrimos 100% da linha de serviços automotivos, chaves canivete, codificadas e abertura de veículos nacionais e importados em Ribeirão Preto.
+        </p>
+      </div>
+
+      <!-- Filtros de Busca e Categorias -->
+      <div class="filter-controls">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="service-search" placeholder="Digite seu carro ou serviço (ex: HB20, BMW, Canivete, Caminhão)...">
+        </div>
+
+        <div class="category-tabs">
+          <button class="tab-btn active" data-filter="all">Todos os Serviços</button>
+          <button class="tab-btn" data-filter="automotivo">🔑 Chaveiro Automotivo</button>
+          <button class="tab-btn" data-filter="canivete-codificada">🚗 Canivete & Codificada</button>
+          <button class="tab-btn" data-filter="pesados-motos">🚛 Caminhão & Motos</button>
+          <button class="tab-btn" data-filter="emergencia">⚡ Emergência 24h</button>
+        </div>
+      </div>
+
+      <!-- Grid de Cards (Palavras-chave sem redundância destrutiva, 100% otimizadas) -->
+      <div class="services-grid" id="services-grid">
+        
+        <!-- Card 1 -->
+        <div class="service-card" data-category="automotivo" data-keywords="chaveiro automotivo perto de mim chaveiro carro chaveiro chave de carro chaveiro de automóveis chaveiro para carros chaveiro veicular">
+          <span class="service-tag">Mais Solicitado</span>
+          <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+          <h3 class="service-title">Chaveiro Automotivo & Carros</h3>
+          <p class="service-desc">
+            Abertura de portas de carros trancados com chave dentro ou no porta-malas. Atendimento móvel com ferramentas de precisão sem arranhar a pintura do veículo.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#ChaveiroAutomotivo</span>
+            <span class="kw-tag">#ChaveDeCarro</span>
+            <span class="kw-tag">#ChaveiroVeicular</span>
+            <span class="kw-tag">#Automóveis</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Orçamento Instantâneo</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card" data-category="canivete-codificada" data-keywords="chave canivete chave codificada chaveiro codificada codificar chave chave keyless chave automotiva chave geral automotiva">
+          <span class="service-tag">Tecnologia</span>
+          <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+          <h3 class="service-title">Chaves Canivete & Codificadas</h3>
+          <p class="service-desc">
+            Cópia, programação e codificação de chaves canivete, chips transponder e sistemas Keyless de presença para todas as montadoras na hora.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#ChaveCodificada</span>
+            <span class="kw-tag">#ChaveCanivete</span>
+            <span class="kw-tag">#CodificarChave</span>
+            <span class="kw-tag">#Keyless</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Cotar Modelo na Hora</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-category="canivete-codificada" data-keywords="chaveiro canivete hb20 chaveiro hyundai chaveiro canivete vw chaveiro volkswagen chaveiro honda">
+          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3 class="service-title">Especialista HB20, VW, Hyundai & Honda</h3>
+          <p class="service-desc">
+            Chaves originais e reposição para linhas populares e intermediárias. Troca de carcaça, conserto de botões e cópia de chaves canivete Volkswagen, Hyundai e Honda.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#CaniveteHB20</span>
+            <span class="kw-tag">#ChaveiroVW</span>
+            <span class="kw-tag">#Hyundai</span>
+            <span class="kw-tag">#Honda</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Chamar Especialista</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" data-category="automotivo" data-keywords="chaveiro bmw chaveiro volvo chaveiro de automóveis importados chave keyless">
+          <span class="service-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--primary);">Linha Premium</span>
+          <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="service-title">Chaveiro BMW, Volvo & Importados</h3>
+          <p class="service-desc">
+            Equipamentos de diagnóstico avançado para veículos de luxo e importados (BMW, Volvo, Audi, Mercedes). Desbloqueio e programação de chaves presenciais de alta segurança.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#ChaveiroBMW</span>
+            <span class="kw-tag">#ChaveiroVolvo</span>
+            <span class="kw-tag">#Importados</span>
+            <span class="kw-tag">#KeylessPremium</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Atendimento VIP Importados</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card" data-category="pesados-motos" data-keywords="chaveiro caminhão chaveiro de caminhao chaveiro moto chaveiro pesados rodovias">
+          <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3 class="service-title">Chaveiro para Caminhão & Motos</h3>
+          <p class="service-desc">
+            Socorro rápido para caminhoneiros e motociclistas. Abertura de cabines, ignição de caminhões na rodovia (Anhanguera/Washington Luís), confecção de chaves de moto.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#ChaveiroCaminhão</span>
+            <span class="kw-tag">#ChaveiroDeCaminhao</span>
+            <span class="kw-tag">#ChaveiroMoto</span>
+            <span class="kw-tag">#SocorroRodovia</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Socorro Pesados 24h</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card" data-category="emergencia" data-keywords="chaveiro 24h chaveiro 24h perto de mim chaveiro próximo a mim chaveiro automotivo perto de mim chaveiro ribeirão preto">
+          <span class="service-tag" style="background: rgba(16, 185, 129, 0.15); color: var(--success);">Plantão Ativo</span>
+          <div class="service-icon"><i class="fa-solid fa-stopwatch"></i></div>
+          <h3 class="service-title">Chaveiro 24h Perto de Mim</h3>
+          <p class="service-desc">
+            Emergência de madrugada ou domingo? Nossa equipe móvel está posicionada estrategicamente nos bairros de Ribeirão Preto para chegar até você no menor tempo da cidade.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#Chaveiro24h</span>
+            <span class="kw-tag">#PertoDeMim</span>
+            <span class="kw-tag">#PróximoAMim</span>
+            <span class="kw-tag">#RibeirãoPreto</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Enviar Localização Agora</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card" data-category="automotivo" data-keywords="chaveiro para carros femininos atendimento de confiança segurança mulher chaveiro automóveis">
+          <span class="service-tag">Segurança & Respeito</span>
+          <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <h3 class="service-title">Atendimento Especial & Mulheres</h3>
+          <p class="service-desc">
+            Foco total em segurança e transparência. Profissionais uniformizados, identificados e prioridade máxima no deslocamento para motoristas em situações de vulnerabilidade ou locais ermos.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#CarrosFemininos</span>
+            <span class="kw-tag">#Segurança</span>
+            <span class="kw-tag">#Confiança</span>
+            <span class="kw-tag">#AtendimentoPrioritário</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Solicitar Viatura Segura</a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card" data-category="emergencia" data-keywords="abertura residencial fechadura digital chaveiro residencial chaveiro geral ribeirão preto">
+          <div class="service-icon"><i class="fa-solid fa-door-open"></i></div>
+          <h3 class="service-title">Chaveiro Residencial & Comercial</h3>
+          <p class="service-desc">
+            Além da especialidade automotiva, realizamos abertura de casas, apartamentos, lojas, cofres e instalação de fechaduras digitais eletrônicas e tetrakey em Ribeirão Preto.
+          </p>
+          <div class="service-keywords">
+            <span class="kw-tag">#Residencial</span>
+            <span class="kw-tag">#FechaduraDigital</span>
+            <span class="kw-tag">#Comercial</span>
+            <span class="kw-tag">#AberturaDePortas</span>
+          </div>
+          <a href="#" class="service-action"><i class="fa-brands fa-whatsapp"></i> Chamar Para Residência</a>
+        </div>
+
+        <!-- Mensagem de Sem Resultados -->
+        <div id="no-results-msg" class="no-results" style="display: none;">
+          <i class="fa-solid fa-triangle-exclamation" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3>Nenhum serviço encontrado para essa busca.</h3>
+          <p style="margin-top: 0.5rem;">Mas não se preocupe! Nós fazemos <strong>qualquer serviço de chaveiro</strong>. Clique abaixo e fale no WhatsApp:</p>
+          <a href="#" class="btn btn-whatsapp btn-whatsapp-general" style="margin-top: 1.25rem; display: inline-flex;">
+            <i class="fa-brands fa-whatsapp"></i> Consultar Meu Serviço Agora
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       DIFERENCIAIS & COBERTURA DE GEOLOCALIZAÇÃO
+       ====================================================================== -->
+  <section class="why-section" id="diferenciais">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Por Que Somos a Escolha Certa</span>
+        <h2 class="section-title">Autoridade e Agilidade Comprovada em Ribeirão Preto</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3 class="why-title">Chegada em 15 Minutos</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Nossas motos e viaturas não ficam paradas no centro; circulam estrategicamente entre as Zonas Sul, Norte, Leste, Oeste e Centro.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="why-title">Maquinário de Última Geração</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Computadores de bordo para codificação de chaves presenciais (Keyless) e canivete na própria viatura, no local onde seu carro parou.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3 class="why-title">Preço Justo e Sem Surpresas</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Passamos a estimativa transparente de valores já no primeiro contato pelo WhatsApp. Aceitamos Pix e cartões de crédito na viatura.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+          <h3 class="why-title">Abertura Sem Danos</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Garantia total de preservação das fechaduras, vidros e pintura do seu automóvel ou residência com ferramentas especiais pneumáticas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cobertura Geográfica de Ribeirão Preto -->
+      <div class="seo-coverage">
+        <div>
+          <span class="shimmer-badge" style="margin-bottom: 1rem;"><i class="fa-solid fa-map-location-dot"></i> SEO Geográfico Ativo</span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem;">
+            Onde Quer Que Você Esteja em <span class="text-gold">Ribeirão Preto</span>, Nós Chegamos.
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Atendemos 24 horas por dia em todas as vias e avenidas rápidas, shoppings, faculdades, condomínios e rodovias que cortam o município.
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-top: 1.5rem;">
+            <i class="fa-brands fa-whatsapp"></i> Chamar Viatura Perto de Mim
+          </a>
+        </div>
+
+        <div>
+          <h4 style="color: #fff; font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--border-glass); padding-bottom: 0.5rem;">
+            📍 Principais Pontos de Cobertura 24h:
+          </h4>
+          <ul class="coverage-list">
+            <li><i class="fa-solid fa-circle-check"></i> Centro & Boulevard</li>
+            <li><i class="fa-solid fa-circle-check"></i> Av. Prof. João Fiúsa (Zona Sul)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Jardim Botânico & Irajá</li>
+            <li><i class="fa-solid fa-circle-check"></i> Campos Elíseos & Saudade</li>
+            <li><i class="fa-solid fa-circle-check"></i> Sumarezinho & Vila Tibério</li>
+            <li><i class="fa-solid fa-circle-check"></i> Lagoinha & Castelo Branco</li>
+            <li><i class="fa-solid fa-circle-check"></i> Bonfim Paulista & Guaporé</li>
+            <li><i class="fa-solid fa-circle-check"></i> Rod. Anhanguera / Washington Luís</li>
+            <li><i class="fa-solid fa-circle-check"></i> Ribeirânia & Nova Ribeirânia</li>
+            <li><i class="fa-solid fa-circle-check"></i> Planalto Verde & Ipiranga</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FAQ (DÚVIDAS FREQUENTES & QUEBRA DE OBJEÇÕES)
+       ====================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tire Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">
+          Tudo o que você precisa saber antes de acionar o Chaveiro Marquinho em Ribeirão Preto.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Qual o tempo médio de chegada do chaveiro automotivo em Ribeirão Preto?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Nosso tempo médio cronometrado é de 10 a 15 minutos na maioria dos bairros de Ribeirão Preto (Centro, Fiusa, Campos Elíseos, Botânico, Sumarezinho, etc.), pois mantemos viaturas descentralizadas em patrulhamento constante.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Vocês fazem chave canivete para qualquer modelo de carro? (HB20, VW, BMW)?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Sim! Trabalhamos com chaves canivete e codificadas originais para todas as marcas: Volkswagen (Gol, Polo, Golf), Hyundai (HB20, Creta), Honda (Civic, HR-V), Chevrolet, Fiat, Ford, Toyota, e também linha premium como BMW, Volvo e Audi.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Perdi todas as chaves do carro (chave codificada). É possível fazer outra no local?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Com certeza. Caso você tenha perdido a chave principal e a reserva (situação chamada de "confecção de chave sem modelo" ou "all keys lost"), nossa viatura vai até o veículo com máquinas de corte eletrônico e scanner de diagnóstico para ler a central e gerar uma nova chave codificada na hora.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Como funciona o atendimento de urgência 24h para caminhões na rodovia?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Temos unidade móvel pesada para atendimento rápido em rodovias como Anhanguera (SP-330), Washington Luís (SP-310) e Anel Viário Norte/Sul, realizando abertura de cabines de caminhão, ignição e confecção de chaves para veículos pesados.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quais as formas de pagamento aceitas pelo chaveiro no local?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Para sua comodidade e segurança, nossos técnicos levam maquininha sem fio e aceitam Pix, cartões de crédito, cartões de débito e dinheiro à vista. Emitimos recibo e garantia de serviço.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       RODAPÉ & BOTÃO FLUTUANTE DE CONVERSÃO
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="#" class="logo" style="margin-bottom: 0.5rem;">
+            <div class="logo-icon"><i class="fa-solid fa-key"></i></div>
+            <div class="logo-text">Chaveiro <span>Marquinho</span></div>
+          </a>
+          <p>
+            Referência em agilidade, tecnologia de codificação automotiva e chaveiro 24 horas em Ribeirão Preto - SP. Confiança de portas abertas.
+          </p>
+          <div style="display: flex; gap: 0.75rem; font-size: 1.2rem; color: #fff; margin-top: 1rem;">
+            <a href="#" style="color: #fff;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: #fff;"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" style="color: #fff;"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Especialidades</h4>
+          <ul class="footer-links">
+            <li><a href="#servicos">Chaveiro Automotivo</a></li>
+            <li><a href="#servicos">Chaves Canivete</a></li>
+            <li><a href="#servicos">Chaves Codificadas</a></li>
+            <li><a href="#servicos">Chaveiro para Caminhão</a></li>
+            <li><a href="#servicos">Chaveiro BMW & Volvo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento 24h</h4>
+          <ul class="footer-links">
+            <li><a href="#diferenciais">Chaveiro Perto de Mim</a></li>
+            <li><a href="#diferenciais">Cobertura Ribeirão Preto</a></li>
+            <li><a href="#diferenciais">Plantão Finais de Semana</a></li>
+            <li><a href="#servicos">Carros Femininos & VIP</a></li>
+            <li><a href="#servicos">Abertura Sem Danos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato Urgente</h4>
+          <p style="color: #fff; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">
+            (16) 99961-7048
+          </p>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Atendimento Móvel em todos os bairros de Ribeirão Preto - SP.
+          </p>
+          <a href="#" class="btn btn-whatsapp btn-whatsapp-general" style="padding: 0.6rem 1rem; font-size: 0.85rem;">
+            <i class="fa-brands fa-whatsapp"></i> Chamar Agora
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Chaveiro Marquinho - Ribeirão Preto. Todos os direitos reservados.
+        </div>
+        <div>
+          Desenvolvido com foco em Alta Conversão, SEO Local e Geolocalização.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp (Desktop & Tablet) -->
+  <a href="#" class="floating-whatsapp btn-whatsapp-general" aria-label="Chamar no WhatsApp 24h">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Chamar WhatsApp 24h</span>
+  </a>
+
+  <!-- BARRA INFERIOR FIXA DE CONVERSÃO (EXCLUSIVA PARA CELULARES / MOBILE) -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:16999617048" class="sticky-btn sticky-call">
+      <i class="fa-solid fa-phone-volume text-gold"></i> Ligar Agora
+    </a>
+    <a href="#" class="sticky-btn sticky-whats btn-whatsapp-general">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp 24h
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
