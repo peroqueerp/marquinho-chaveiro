@@ -73,14 +73,11 @@ function initWhatsAppLinks() {
  * via API de geolocalização do navegador (GPS), reforçando o SEO Local.
  */
 const BAIRROS_ETA = {
-  'centro': { nome: 'Centro / Meio Damião', eta: '8 a 12 min', viatura: 'Viatura Centro (Av. Jerônimo Gonçalves)' },
-  'fiusa': { nome: 'Av. Prof. João Fiúsa / Alto do Ipê', eta: '10 a 15 min', viatura: 'Viatura Zona Sul (Av. Wladimir Meirelles)' },
-  'jardim-botanico': { nome: 'Jardim Botânico / Irajá', eta: '10 a 14 min', viatura: 'Viatura Zona Sul / Botânico' },
-  'campos-eliseos': { nome: 'Campos Elíseos / Saudade', eta: '8 a 13 min', viatura: 'Viatura Zona Norte (Av. Saudade)' },
-  'sumarezinho': { nome: 'Sumarezinho / Vila Tibério', eta: '9 a 14 min', viatura: 'Viatura Zona Oeste (Av. do Café)' },
-  'lagoinha': { nome: 'Lagoinha / Castelo Branco', eta: '12 a 16 min', viatura: 'Viatura Zona Leste (Av. Pres. Castelo Branco)' },
-  'bonfim-paulista': { nome: 'Bonfim Paulista / Guaporé', eta: '15 a 20 min', viatura: 'Viatura Rod. José Fregonesi' },
-  'caminhao-rodovias': { nome: 'Rodovias (Anhanguera / Washington Luís)', eta: '15 a 22 min', viatura: 'Unidade Móvel Pesada 24h' }
+  'centro': { nome: 'Centro / Boulevard', eta: 'Chegada em até 40 minutos.', viatura: 'Viatura Centro' },
+  'fiusa': { nome: 'Av. Prof. João Fiúsa / Alto do Ipê', eta: 'Chegada em até 40 minutos.', viatura: 'Viatura Zona Sul' },
+  'jardim-botanico': { nome: 'Jardim Botânico / Irajá', eta: 'Chegada em até 40 minutos.', viatura: 'Viatura Zona Sul / Botânico' },
+  'ribeirania': { nome: 'Ribeirânia / Nova Ribeirânia', eta: 'Chegada em até 40 minutos.', viatura: 'Viatura Zona Sudeste' },
+  'bonfim-paulista': { nome: 'Bonfim Paulista / Guaporé', eta: 'Chegada em até 40 minutos.', viatura: 'Viatura Rod. José Fregonesi' }
 };
 
 function initGeolocationSLA() {
@@ -97,7 +94,7 @@ function initGeolocationSLA() {
     if (val && BAIRROS_ETA[val]) {
       updateETADisplay(BAIRROS_ETA[val].eta, BAIRROS_ETA[val].viatura);
     } else {
-      updateETADisplay('10 a 15 min', 'Viatura em patrulhamento na sua região');
+      updateETADisplay('Chegada em até 40 minutos.', 'Viatura em patrulhamento na sua região');
     }
   });
 
@@ -117,7 +114,7 @@ function initGeolocationSLA() {
           // Em um app de grande porte, aqui chamaríamos uma API de Geocoding (ex: Google Maps / ViaCEP / Nominatim)
           // Para esta LP ultra-rápida, detectamos com sucesso que o usuário está na região e cravamos o SLA otimizado:
           setTimeout(() => {
-            updateETADisplay('7 a 11 min (GPS Confirmado 📍)', 'Viatura 24h mais próxima acionada para suas coordenadas!');
+            updateETADisplay('Chegada em até 40 minutos. (GPS Confirmado 📍)', 'Viatura 24h mais próxima acionada para suas coordenadas!');
             btnGPS.innerHTML = '<i class="fa-solid fa-check text-green"></i> Região Detectada!';
             btnGPS.style.background = 'rgba(16, 185, 129, 0.2)';
             btnGPS.style.borderColor = '#10b981';
